@@ -42,6 +42,12 @@
     # '')
     pkgs.spotify
     pkgs.zsh-powerlevel10k
+    pkgs.google-chrome
+    pkgs.spotify
+    pkgs.skypeforlinux
+    pkgs.logseq
+    pkgs.discord
+    pkgs.steam
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage

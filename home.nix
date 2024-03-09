@@ -48,6 +48,7 @@
     pkgs.logseq
     pkgs.discord
     pkgs.steam
+    pkgs.syncthing
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage

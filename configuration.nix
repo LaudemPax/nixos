@@ -144,10 +144,6 @@
     };
   };
 
-  # docker
-  virtualization.docker.enable = true;
-  users.users.aman.extraGroups = [ "docker" ];
-
   # tailscale
   services.tailscale.enable = true;
 

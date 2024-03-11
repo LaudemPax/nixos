@@ -6,15 +6,29 @@
 {
   imports =
     [ # Include the results of the hardware scan.
-      # /etc/nixos/hardware-configuration.nix
       ./hardware-configuration.nix
       inputs.home-manager.nixosModules.default
     ];
 
+
   # Bootloader.
-  boot.loader.grub.enable = true;
-  boot.loader.grub.device = "/dev/sda";
-  boot.loader.grub.useOSProber = true;
+  boot.loader.systemd-boot.enable = true;
+  boot.loader.efi.canTouchEfiVariables = true;
+
+  # graphics
+  hardware.opengl = {
+	enable = true;
+	driSupport = true;
+	driSupport32Bit = true;
+  };
+  services.xserver.videoDrivers = ["nvidia"];
+  hardware.nvidia = {
+	modesetting.enable = true;
+	powerManagement.enable = false;
+	powerManagement.finegrained = false;
+	open = false;
+	package = config.boot.kernelPackages.nvidiaPackages.stable;
+  };
 
   networking.hostName = "nixos"; # Define your hostname.
   
@@ -122,6 +136,8 @@
   meslo-lgs-nf
   timeshift
   distrobox
+  gparted
+  pciutils
   ];
 
   # enable zsh system wide

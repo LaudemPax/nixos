@@ -142,6 +142,7 @@
   distrobox
   gparted
   pciutils
+  gcc
   ];
 
   # enable zsh system wide

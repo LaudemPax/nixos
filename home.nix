@@ -49,6 +49,8 @@
     pkgs.discord
     pkgs.steam
     pkgs.syncthing
+    pkgs.cargo
+    pkgs.nodejs_21
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage

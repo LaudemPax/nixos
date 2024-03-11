@@ -54,15 +54,6 @@
     pkgs.latte-dock
   ];
 
-  services = {
-    syncthing = {
-        enable = true;
-        user = "myusername";
-        dataDir = "/home/myusername/Documents";    # Default folder for new synced folders
-        configDir = "/home/myusername/Documents/.config/syncthing";   # Folder for Syncthing's settings and keys
-    };
-  };
-
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
   # plain files is through 'home.file'.
   home.file = {

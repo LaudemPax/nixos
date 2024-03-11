@@ -101,6 +101,13 @@
     #media-session.enable = true;
   };
 
+  services.syncthing = {
+	  enable = true;
+	  user = "aman";
+	  dataDir = "/home/aman/syncthing";
+	  configDir = "/home/aman/.config/syncthing";
+  };
+
   # Enable touchpad support (enabled default in most desktopManager).
   # services.xserver.libinput.enable = true;
 

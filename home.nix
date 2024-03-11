@@ -51,6 +51,8 @@
     pkgs.syncthing
     pkgs.cargo
     pkgs.nodejs_21
+    pkgs.lazygit
+    pkgs.latte-dock
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage

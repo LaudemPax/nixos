@@ -159,6 +159,9 @@
   gcc
   ];
 
+  # enable kde connect
+  programs.kdeconnect.enable = true;
+
   # enable zsh system wide
   programs.zsh.enable = true;
 

@@ -53,6 +53,7 @@
     pkgs.lazygit
     pkgs.latte-dock
     pkgs.teamspeak_client
+    pkgs.cudaPackages.cudatoolkit
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage

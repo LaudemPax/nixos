@@ -40,6 +40,7 @@
     # (pkgs.writeShellScriptBin "my-hello" ''
     #   echo "Hello, ${config.home.username}!"
     # '')
+    pkgs.libsForQt5.kate
     pkgs.spotify
     pkgs.zsh-powerlevel10k
     pkgs.google-chrome

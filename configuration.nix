@@ -31,6 +31,7 @@
 	powerManagement.enable = false;
 	powerManagement.finegrained = false;
 	open = false;
+	nvidiaSettings = true;
 	package = config.boot.kernelPackages.nvidiaPackages.stable;
   };
 
@@ -197,6 +198,7 @@
 
 # enable docker
 virtualisation.docker.enable = true;
+virtualisation.docker.enableNvidia = true;
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.

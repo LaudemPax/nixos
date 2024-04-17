@@ -19,21 +19,6 @@
   boot.loader.systemd-boot.configurationLimit = 5;
   nix.gc.automatic = true;
 
-  # prevent nix build from using all RAM and crashing
-  systemd = {
-    # Create a separate slice for nix-daemon that is
-    # memory-managed by the userspace systemd-oomd killer
-    slices."nix-daemon".sliceConfig = {
-      ManagedOOMMemoryPressure = "kill";
-      ManagedOOMMemoryPressureLimit = "60%";
-    };
-    services."nix-daemon".serviceConfig.Slice = "nix-daemon.slice";
-
-    # If a kernel-level OOM event does occur anyway,
-    # strongly prefer killing nix-daemon child processes
-    services."nix-daemon".serviceConfig.OOMScoreAdjust = 1000;
-  };
-
   # graphics
   hardware.opengl = {
 	enable = true;

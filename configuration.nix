@@ -25,7 +25,7 @@
     # memory-managed by the userspace systemd-oomd killer
     slices."nix-daemon".sliceConfig = {
       ManagedOOMMemoryPressure = "kill";
-      ManagedOOMMemoryPressureLimit = "80%";
+      ManagedOOMMemoryPressureLimit = "60%";
     };
     services."nix-daemon".serviceConfig.Slice = "nix-daemon.slice";
 

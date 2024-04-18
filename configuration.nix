@@ -152,8 +152,10 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
+  xclip
   git
   htop
+  vim
   neovim
   pkgs.linuxKernel.packages.linux_zen.virtualboxGuestAdditions
   zsh

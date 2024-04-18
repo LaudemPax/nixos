@@ -179,8 +179,7 @@
     shellAliases = {
       ll = "ls -l";
       nixbuild = "sudo nixos-rebuild switch --flake ~/nixos#default";
-      nixconfedit = "nvim ~/nixos/configuration.nix";
-      nixhmedit = "nvim ~/nixos/home.nix";
+      cdnix = "cd ~/nixos";
       nixman = "man configuration.nix";
       homemanager-man = "man home-configuration.nix";
     };

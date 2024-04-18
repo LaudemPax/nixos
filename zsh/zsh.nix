@@ -1,6 +1,9 @@
 { configm, pkgs, ... }:
 {
   programs.zsh = {
+  shellAliases = {
+	  ros2shell = "nix develop github:LaudemPax/MBSIM-nix-dev-shell";
+  };
   plugins = [
 	{
 		name = "powerlevel10k";

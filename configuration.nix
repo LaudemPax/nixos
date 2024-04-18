@@ -128,7 +128,7 @@
   users.users.aman = {
     isNormalUser = true;
     description = "aman";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "networkmanager" "wheel" "docker"];
     packages = with pkgs; [
       firefox
     #  thunderbird

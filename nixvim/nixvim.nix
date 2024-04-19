@@ -2,6 +2,9 @@
 {
     programs.nixvim = {
         enable = true;
+        globals = {
+            mapleader = " ";
+        };
         options = {
             nu = true; 
             relativenumber = true;
@@ -35,12 +38,25 @@
 
             treesitter.enable = true;
 
+            nvim-tree = {
+                enable = true;
+                openOnSetup = true;
+                openOnSetupFile = true;
+                sortBy = "case_sensitive";
+                renderer = {
+                    groupEmpty = true;
+                };
+                view = {
+                    relativenumber = true;
+                    side = "right";
+                };
+            }; 
+
             lsp = {
                 enable = true;
                 servers = {
                     # lua
                     lua-ls.enable = true;
-
                     # nix
                     nil_ls.enable = true;
                 };
@@ -73,7 +89,13 @@
                     ];
                 };
             };
+
         };
+        extraConfigLua = ''
+            -- nvim-tree keymap
+            local nvimtree_api = require("nvim-tree.api")
+            vim.keymap.set('n', '<leader>f', nvimtree_api.tree.toggle)
+        '';
     };
 }
 

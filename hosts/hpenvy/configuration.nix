@@ -16,8 +16,8 @@
   boot.loader.efi.canTouchEfiVariables = true;
 
   # keep only the last 5 generations
-  boot.loader.systemd-boot.configurationLimit = 5;
-  nix.gc.automatic = true;
+#  boot.loader.systemd-boot.configurationLimit = 5;
+#  nix.gc.automatic = true;
 
   # graphics
   hardware.opengl = {

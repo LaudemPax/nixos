@@ -22,10 +22,10 @@
     in
     {
     
-      nixosConfigurations.default = nixpkgs.lib.nixosSystem {
+      nixosConfigurations.workstation = nixpkgs.lib.nixosSystem {
           specialArgs = {inherit inputs;}; # pass inputs to all modules
           modules = [ 
-            ./configuration.nix
+            ./hosts/workstation/configuration.nix
             inputs.home-manager.nixosModules.default
           ];
         };

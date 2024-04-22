@@ -135,6 +135,7 @@
     ];
   };
 
+  nix.settings.trusted-users = [ "aman" ];
   # home manager
   home-manager = {
 	extraSpecialArgs = {inherit inputs; }; # pass inputs from flake.nix to module

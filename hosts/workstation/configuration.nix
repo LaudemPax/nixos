@@ -205,7 +205,6 @@ virtualisation.docker.enableNvidia = true;
    # enable virtualbox
    virtualisation.virtualbox.host.enable = true;
    users.extraGroups.vboxusers.members = [ "aman" ];
-   virtualisation.virtualbox.host.enableExtensionPack = true;
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.

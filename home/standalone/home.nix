@@ -33,6 +33,7 @@
     pkgs.zsh
     pkgs.zsh-powerlevel10k
     pkgs.meslo-lgs-nf
+    pkgs.lazygit
     pkgs.spotify
     pkgs.google-chrome
 
@@ -53,12 +54,8 @@
   # some extra zshell config
   programs.zsh = {
       enableCompletion = true;
-      autosuggestions.enable = true;
+      enableAutosuggestions = true;
       syntaxHighlighting.enable = true;
-      ohMyZsh = {
-          enable = true;
-          plugins = [ "git" "sudo" "docker" ];
-      };
   };
 
 # Home Manager is pretty good at managing dotfiles. The primary way to manage

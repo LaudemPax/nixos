@@ -3,6 +3,7 @@
 {
   imports = [
     inputs.nixvim.homeManagerModules.nixvim
+    ../nixvim/nixvim.nix
     ../zsh/zsh.nix
   ];
 
@@ -32,7 +33,7 @@
     pkgs.zsh
     pkgs.zsh-powerlevel10k
     pkgs.meslo-lgs-nf
-    pkgs.neovim
+#    pkgs.neovim
     pkgs.spotify
     pkgs.google-chrome
 

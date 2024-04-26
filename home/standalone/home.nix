@@ -33,7 +33,6 @@
     pkgs.zsh
     pkgs.zsh-powerlevel10k
     pkgs.meslo-lgs-nf
-#    pkgs.neovim
     pkgs.spotify
     pkgs.google-chrome
 

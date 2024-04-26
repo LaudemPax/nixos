@@ -3,6 +3,7 @@
 {
   imports = [
     inputs.nixvim.homeManagerModules.nixvim
+    ../zsh/zsh.nix
   ];
 
   # allow unfree
@@ -22,9 +23,15 @@
   # release notes.
   home.stateVersion = "23.11"; # Please read the comment before changing.
 
+  # allows fonts to be installed via home manager
+  fonts.fontconfig.enable = true;
+
   # The home.packages option allows you to install Nix packages into your
   # environment.
   home.packages = [
+    pkgs.zsh
+    pkgs.zsh-powerlevel10k
+    pkgs.meslo-lgs-nf
     pkgs.neovim
     pkgs.spotify
     pkgs.google-chrome

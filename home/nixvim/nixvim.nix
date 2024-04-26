@@ -30,7 +30,12 @@
         plugins = {
             lualine.enable = true;
 
-            oil.enable = true;
+            oil = {
+                enable = true;
+                settings = {
+                    default_file_explorer = true;
+                };
+            };
             
             bufferline.enable = true;
 

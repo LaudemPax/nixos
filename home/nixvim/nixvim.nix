@@ -64,6 +64,8 @@
                     lua-ls.enable = true;
                     # nix
                     nil_ls.enable = true;
+                    # xml 
+                    lemminx.enable = true;
                 };
             };
             cmp = {

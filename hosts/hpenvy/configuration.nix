@@ -12,12 +12,15 @@
 
 
   # Bootloader.
-  boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
+  boot.loader.grub.enable = true;
+  boot.loader.grub.device = "nodev";
+  boot.loader.grub.useOSProber = true;
+  boot.loader.grub.efiSupport = true;
 
-  # keep only the last 5 generations
-#  boot.loader.systemd-boot.configurationLimit = 5;
-#  nix.gc.automatic = true;
+  # keep only the last 10 generations
+   boot.loader.grub.configurationLimit = 10;
+  nix.gc.automatic = true;
 
   # graphics
   hardware.opengl = {

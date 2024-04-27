@@ -103,6 +103,14 @@
                 };
             };
 
+            toggleterm = {
+                enable = true;
+                settings = {
+                    direction="horizontal";
+                    open_mapping="[[<leader>t]]";
+                };
+            };
+
         };
         extraConfigLua = ''
             -- nvim-tree keymap

@@ -68,6 +68,12 @@
                     lemminx.enable = true;
                 };
             };
+
+            lsp-format = {
+                enable = true;
+                lspServersToEnable = "all";
+            };
+
             cmp = {
                 enable = true;
                 settings = {

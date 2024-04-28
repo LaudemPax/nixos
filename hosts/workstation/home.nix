@@ -56,7 +56,7 @@
             pkgs.lazygit
             pkgs.latte-dock
             pkgs.teamspeak_client
-            pkgs.onlyoffice-bin_7_5
+           pkgs.onlyoffice-bin_latest
             ];
 
 # Home Manager is pretty good at managing dotfiles. The primary way to manage

@@ -58,7 +58,10 @@
                 view = {
                     relativenumber = true;
                     side = "right";
-                    width = {}; # Adaptive
+                    width = {
+                        min = 50;
+                        max = -1;
+                    };
                 };
                 git = {
                     enable = true;

@@ -66,6 +66,8 @@
                     nil_ls.enable = true;
                     # xml 
                     lemminx.enable = true;
+                    # python
+                    pyright.enable = true;
                 };
             };
 

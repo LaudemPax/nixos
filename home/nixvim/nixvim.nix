@@ -80,6 +80,11 @@
                 lspServersToEnable = "all";
             };
 
+            # commenting lines
+            comment = {
+                enable = true;
+            };
+
             cmp = {
                 enable = true;
                 settings = {
@@ -123,6 +128,9 @@
             -- nvim-tree keymap
             local nvimtree_api = require("nvim-tree.api")
             vim.keymap.set('n', '<leader>f', nvimtree_api.tree.toggle)
+
+            -- comment.nvim keymap
+            vim.keymap.set("n", "<leader>c", function() require('Comment.api').toggle.linewise.current() end, { noremap = true, silent = true })
         '';
     };
 }

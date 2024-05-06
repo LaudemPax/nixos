@@ -42,7 +42,9 @@
             
             bufferline.enable = true;
 
-            telescope.enable = true;
+            telescope = {
+                enable = true;
+            };
 
             treesitter.enable = true;
 
@@ -139,7 +141,21 @@
 
             -- comment.nvim keymap
             vim.keymap.set("n", "<leader>c", function() require('Comment.api').toggle.linewise.current() end, { noremap = true, silent = true })
-        '';
+
+            -- telescope stuff
+            require('telescope').setup({
+                defaults = {
+                    file_ignore_patterns = {
+                        "node_modules/*",
+                        ".git/*",
+                        "*/node_modules/*"
+                    }
+                }
+            });
+
+            local tsbuiltin = require('telescope.builtin')
+            vim.keymap.set('n', '<leader>ff', tsbuiltin.find_files, {})
+            '';
     };
 }
 

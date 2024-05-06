@@ -48,7 +48,6 @@
 
             nvim-tree = {
                 enable = true;
-                openOnSetup = true;
                 openOnSetupFile = true;
                 sortBy = "case_sensitive";
                 renderer = {
@@ -57,6 +56,11 @@
                 view = {
                     relativenumber = true;
                     side = "right";
+                    width = {}; # Adaptive
+                };
+                git = {
+                    enable = true;
+                    ignore = false;
                 };
             }; 
 

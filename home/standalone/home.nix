@@ -36,6 +36,8 @@
     pkgs.lazygit
     pkgs.spotify
     pkgs.google-chrome
+    # for  neovim copypasting
+    pkgs.xclip
 
     # # It is sometimes useful to fine-tune packages, for example, by applying
     # # overrides. You can do that directly here, just don't forget the

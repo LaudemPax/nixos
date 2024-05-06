@@ -85,6 +85,10 @@
                 enable = true;
             };
 
+            leap = {
+                enable = true;
+            };
+
             cmp = {
                 enable = true;
                 settings = {

@@ -109,6 +109,7 @@
                 enable = true;
                 settings = {
                     direction="horizontal";
+                    insert_mappings=false;
                     open_mapping="[[<leader>t]]";
                 };
             };

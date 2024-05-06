@@ -5,7 +5,7 @@
         globals = {
             mapleader = " ";
         };
-        options = {
+        opts = {
             nu = true; 
             relativenumber = true;
             tabstop = 4;
@@ -22,10 +22,13 @@
             termguicolors = true;
             signcolumn = "yes";
             updatetime = 50;
+            scrolloff = 10;
         };
         colorschemes.tokyonight = {
             enable = true;
-            style = "storm";
+            settings= {
+                style = "storm";
+            };
         };
         plugins = {
             lualine.enable = true;

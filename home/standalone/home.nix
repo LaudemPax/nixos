@@ -36,7 +36,7 @@
     pkgs.lazygit
     pkgs.spotify
     pkgs.google-chrome
-    # for  neovim copypasting
+# for  neovim copypasting
     pkgs.xclip
 
     # # It is sometimes useful to fine-tune packages, for example, by applying
@@ -56,7 +56,7 @@
   # some extra zshell config
   programs.zsh = {
       enableCompletion = true;
-      enableAutosuggestions = true;
+      autosuggestion.enable = true;
       syntaxHighlighting.enable = true;
   };
 

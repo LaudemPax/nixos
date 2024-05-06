@@ -40,7 +40,10 @@
                 };
             };
             
-            bufferline.enable = true;
+            bufferline = {
+                enable = true;
+
+            };
 
             telescope = {
                 enable = true;
@@ -137,11 +140,30 @@
             };
 
         };
+        keymaps = [
+           {
+                action = "<cmd>BufferLinePick<CR>";
+                key = "<leader>e";
+                mode = "n";
+                options = {
+                    silent = true;
+                };
+           }
+           {
+               action = {
+                   __raw = ''
+                       require("nvim-tree.api").tree.toggle
+                   '';
+               };
+               key = "<leader>f";
+               mode = "n";
+               options = {
+                   silent = true;
+                   noremap = true;
+               };
+           }
+        ];
         extraConfigLua = ''
-            -- nvim-tree keymap
-            local nvimtree_api = require("nvim-tree.api")
-            vim.keymap.set('n', '<leader>f', nvimtree_api.tree.toggle)
-
             -- comment.nvim keymap
             vim.keymap.set("n", "<leader>c", function() require('Comment.api').toggle.linewise.current() end, { noremap = true, silent = true })
 

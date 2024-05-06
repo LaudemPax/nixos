@@ -74,6 +74,7 @@
                 };
             };
 
+            # formatting on save
             lsp-format = {
                 enable = true;
                 lspServersToEnable = "all";

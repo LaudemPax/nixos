@@ -86,13 +86,13 @@
   # services.xserver.desktopManager.gnome.enable = true;
 
   # Enable KDE Plasma
-  services.xserver.displayManager.sddm.enable = true;
+  services.displayManager.sddm.enable = true;
   services.xserver.desktopManager.plasma5.enable = true;
 
   # Configure keymap in X11
   services.xserver = {
-    layout = "de";
-    xkbVariant = "";
+    xkb.layout = "de";
+    xkb.variant = "";
   };
 
   # Configure console keymap
@@ -171,6 +171,7 @@
   gparted
   pciutils
   gcc
+  thunderbird
   ];
 
   # enable kde connect

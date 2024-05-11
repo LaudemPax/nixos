@@ -28,6 +28,7 @@
             enable = true;
             settings= {
                 style = "storm";
+                on_colors = "function(colors) colors.fg_gutter = '#b2b8cf' end";
             };
         };
         plugins = {

@@ -28,7 +28,7 @@
             enable = true;
             settings= {
                 style = "storm";
-                on_colors = "function(colors) colors.fg_gutter = '#b2b8cf' end";
+                on_highlights = "function(hl, c) hl.LineNr = { fg = '#b2b8cf' } end";
             };
         };
         plugins = {

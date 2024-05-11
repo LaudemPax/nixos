@@ -73,6 +73,10 @@
                 };
             }; 
 
+            lazygit = {
+                enable = true;
+            };
+
             lsp = {
                 enable = true;
                 servers = {
@@ -142,59 +146,67 @@
 
         };
         keymaps = [
-            {
-                action = "<CMD>split<CR>";
-                key = "<leader>sh";
-                mode = "n";
-                options = {
-                    silent = true;
-                };
-            }
-            {
-                action = "<CMD>vsplit<CR>";
-                key = "<leader>sv";
-                mode = "n";
-                options = {
-                    silent = true;
-                };
-            }
-            {
-                action = "<cmd>BufferLinePick<CR>";
-                key = "<leader>e";
-                mode = "n";
-                options = {
-                    silent = true;
-                };
-           }
-           {
-               action = {
-                   __raw = ''
-                       require("nvim-tree.api").tree.toggle
-                   '';
-               };
-               key = "<leader>f";
-               mode = "n";
-               options = {
-                   silent = true;
-                   noremap = true;
-               };
-           }
-           {
-               action = "<CMD>BufferLineCycleNext<CR>";
-               key = "<S-e>";
-               mode = "n";
-               options = {
-                   silent = true;
-                };
-           }
-           {
-               action = "<CMD>BufferLineCyclePrev<CR>";
-               key = "<S-q>";
-               mode = "n";
-               options = {
-                   silent = true;
-                };
-           }
+        {
+            action = "<CMD>split<CR>";
+            key = "<leader>sh";
+            mode = "n";
+            options = {
+                silent = true;
+            };
+        }
+        {
+            action = "<CMD>vsplit<CR>";
+            key = "<leader>sv";
+            mode = "n";
+            options = {
+                silent = true;
+            };
+        }
+        {
+            action = "<cmd>BufferLinePick<CR>";
+            key = "<leader>e";
+            mode = "n";
+            options = {
+                silent = true;
+            };
+        }
+        {
+            action = {
+                __raw = ''
+                    require("nvim-tree.api").tree.toggle
+                    '';
+            };
+            key = "<leader>f";
+            mode = "n";
+            options = {
+                silent = true;
+                noremap = true;
+            };
+        }
+        {
+            action = "<CMD>BufferLineCycleNext<CR>";
+            key = "<S-e>";
+            mode = "n";
+            options = {
+                silent = true;
+            };
+        }
+        {
+            action = "<CMD>BufferLineCyclePrev<CR>";
+            key = "<S-q>";
+            mode = "n";
+            options = {
+                silent = true;
+            };
+        }
+        {
+            action = "<CMD>LazyGit<CR>";
+            key = "<leader>gg";
+            mode = "n";
+            options = {
+                silent = true;
+            };
+        }
         ];
         extraConfigLua = ''
             -- comment.nvim keymap

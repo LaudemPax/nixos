@@ -142,7 +142,23 @@
 
         };
         keymaps = [
-           {
+            {
+                action = "<CMD>split<CR>";
+                key = "<leader>sh";
+                mode = "n";
+                options = {
+                    silent = true;
+                };
+            }
+            {
+                action = "<CMD>vsplit<CR>";
+                key = "<leader>sv";
+                mode = "n";
+                options = {
+                    silent = true;
+                };
+            }
+            {
                 action = "<cmd>BufferLinePick<CR>";
                 key = "<leader>e";
                 mode = "n";
@@ -162,6 +178,22 @@
                    silent = true;
                    noremap = true;
                };
+           }
+           {
+               action = "<CMD>BufferLineCycleNext<CR>";
+               key = "<S-e>";
+               mode = "n";
+               options = {
+                   silent = true;
+                };
+           }
+           {
+               action = "<CMD>BufferLineCyclePrev<CR>";
+               key = "<S-q>";
+               mode = "n";
+               options = {
+                   silent = true;
+                };
            }
         ];
         extraConfigLua = ''

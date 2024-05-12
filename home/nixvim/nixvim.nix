@@ -185,7 +185,7 @@
         }
         {
             action = "<CMD>BufferLineCycleNext<CR>";
-            key = "<S-e>";
+            key = "<C-e>";
             mode = "n";
             options = {
                 silent = true;
@@ -193,7 +193,7 @@
         }
         {
             action = "<CMD>BufferLineCyclePrev<CR>";
-            key = "<S-q>";
+            key = "<C-q>";
             mode = "n";
             options = {
                 silent = true;

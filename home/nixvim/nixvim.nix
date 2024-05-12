@@ -100,6 +100,16 @@
             # commenting lines
             comment = {
                 enable = true;
+                settings = {
+                    toggler = {
+                        line = "<leader>c";
+                        block = "<leader>C";
+                    };
+                    opleader = {
+                        line = "<leader>c";
+                        block = "<leader>C";
+                    };
+                };
             };
 
             leap = {
@@ -209,9 +219,6 @@
         }
         ];
         extraConfigLua = ''
-            -- comment.nvim keymap
-            vim.keymap.set("n", "<leader>c", function() require('Comment.api').toggle.linewise.current() end, { noremap = true, silent = true })
-
             -- telescope stuff
             require('telescope').setup({
                 defaults = {

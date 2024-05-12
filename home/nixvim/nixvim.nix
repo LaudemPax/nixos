@@ -186,7 +186,7 @@
                     require("nvim-tree.api").tree.toggle
                     '';
             };
-            key = "<leader>f";
+            key = "<leader>ft";
             mode = "n";
             options = {
                 silent = true;

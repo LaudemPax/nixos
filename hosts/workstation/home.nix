@@ -57,6 +57,8 @@
             pkgs.teamspeak_client
            pkgs.onlyoffice-bin_latest
            pkgs.jamesdsp #Equalizer
+           pkgs.zoom-us
+           pkgs.android-studio
             ];
 
 # Home Manager is pretty good at managing dotfiles. The primary way to manage

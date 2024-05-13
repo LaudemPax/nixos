@@ -133,12 +133,15 @@
   users.users.aman = {
     isNormalUser = true;
     description = "aman";
-    extraGroups = [ "networkmanager" "wheel" "docker"];
+    extraGroups = [ "networkmanager" "wheel" "docker" "kvm" "adbusers"];
     packages = with pkgs; [
       firefox
     #  thunderbird
     ];
   };
+
+  # android development
+  programs.adb.enable = true;
 
   nix.settings.trusted-users = [ "aman" ];
   # home manager

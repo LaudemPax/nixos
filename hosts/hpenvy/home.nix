@@ -52,7 +52,6 @@
             pkgs.discord
             pkgs.steam
             pkgs.cargo
-            pkgs.nodejs_21
             pkgs.lazygit
             pkgs.latte-dock
             pkgs.teamspeak_client

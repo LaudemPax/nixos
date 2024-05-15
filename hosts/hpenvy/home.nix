@@ -52,10 +52,10 @@
             pkgs.discord
             pkgs.steam
             pkgs.cargo
-            pkgs.nodejs_21
             pkgs.lazygit
             pkgs.latte-dock
             pkgs.teamspeak_client
+            pkgs.android-studio
             ];
 
 # Home Manager is pretty good at managing dotfiles. The primary way to manage

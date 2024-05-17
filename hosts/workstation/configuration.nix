@@ -39,6 +39,7 @@
 	nvidiaSettings = true;
 	package = config.boot.kernelPackages.nvidiaPackages.stable;
   };
+  boot.kernelModules = [ "nvidia_uvm" ];
 
   networking.hostName = "nixos"; # Define your hostname.
   

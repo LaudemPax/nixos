@@ -36,9 +36,11 @@
     pkgs.lazygit
     pkgs.spotify
     pkgs.google-chrome
-# for  neovim copypasting
+    # for  neovim copypasting
     pkgs.xclip
     pkgs.latte-dock
+    pkgs.ranger
+    pkgs.tmux
 
     # # It is sometimes useful to fine-tune packages, for example, by applying
     # # overrides. You can do that directly here, just don't forget the

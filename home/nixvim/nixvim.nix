@@ -88,6 +88,8 @@
                     lemminx.enable = true;
                     # python
                     pyright.enable = true;
+                    # c sharp
+                    csharp-ls.enable = true;
                 };
             };
 

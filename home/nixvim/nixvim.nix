@@ -227,6 +227,14 @@
                 silent = true;
             };
         }
+        {
+            action = "<CMD>wqa!<CR>";
+            key = "<leader>qqa";
+            mode = "n";
+            options = {
+                silent = true;
+            };
+        }
         ];
         extraConfigLua = ''
             -- telescope stuff

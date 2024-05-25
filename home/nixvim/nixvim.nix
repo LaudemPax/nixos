@@ -219,6 +219,14 @@
                 silent = true;
             };
         }
+        {
+            action = "<CMD>bdelete<CR>";
+            key = "<leader>qq";
+            mode = "n";
+            options = {
+                silent = true;
+            };
+        }
         ];
         extraConfigLua = ''
             -- telescope stuff

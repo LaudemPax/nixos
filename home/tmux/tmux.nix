@@ -25,6 +25,9 @@
           bind Right select-pane -R
           bind Up select-pane -U
           bind Down select-pane -D
+
+          # Fixes ESC lag in neovim
+          set -sg escape-time 0
           '';
   };
 }

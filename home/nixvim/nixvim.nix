@@ -175,8 +175,16 @@
             };
         }
         {
-            action = "<cmd>BufferLinePick<CR>";
+            action = "<cmd>lua vim.diagnostic.open_float(0, {scope='line'})<CR>";
             key = "<leader>e";
+            mode = "n";
+            options = {
+                silent = true;
+            };
+        }
+        {
+            action = "<cmd>BufferLinePick<CR>";
+            key = "<leader>r";
             mode = "n";
             options = {
                 silent = true;

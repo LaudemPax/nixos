@@ -44,6 +44,7 @@
 #   echo "Hello, ${config.home.username}!"
 # '')
             pkgs.libsForQt5.kate
+            pkgs.libsForQt5.dragon
             pkgs.spotify
             pkgs.zsh-powerlevel10k
             pkgs.google-chrome

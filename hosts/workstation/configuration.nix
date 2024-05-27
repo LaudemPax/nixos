@@ -176,7 +176,6 @@
   pciutils
   gcc
   thunderbird
-  vlc
   ];
 
   # enable kde connect

@@ -176,7 +176,7 @@
         }
         {
             action = "<cmd>lua vim.diagnostic.open_float(0, {scope='line'})<CR>";
-            key = "<leader>e";
+            key = "<leader>r";
             mode = "n";
             options = {
                 silent = true;
@@ -184,7 +184,7 @@
         }
         {
             action = "<cmd>BufferLinePick<CR>";
-            key = "<leader>r";
+            key = "<leader>e";
             mode = "n";
             options = {
                 silent = true;

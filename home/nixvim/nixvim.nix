@@ -176,7 +176,15 @@
         }
         {
             action = "<cmd>lua vim.diagnostic.open_float(0, {scope='line'})<CR>";
-            key = "<leader>r";
+            key = "<leader>rr";
+            mode = "n";
+            options = {
+                silent = true;
+            };
+        }
+        {
+            action = "<cmd>lua vim.lsp.buf.rename()<CR>";
+            key = "<leader>rn";
             mode = "n";
             options = {
                 silent = true;

@@ -191,6 +191,14 @@
             };
         }
         {
+            action = "<cmd>lua vim.lsp.buf.hover()<CR>";
+            key = "<leader>in";
+            mode = "n";
+            options = {
+                silent = true;
+            };
+        }
+        {
             action = "<cmd>BufferLinePick<CR>";
             key = "<leader>e";
             mode = "n";

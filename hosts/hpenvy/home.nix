@@ -44,6 +44,7 @@
 # '')
         pkgs.libsForQt5.kate
             pkgs.spotify
+            pkgs.mpv
             pkgs.zsh-powerlevel10k
             pkgs.google-chrome
             pkgs.spotify

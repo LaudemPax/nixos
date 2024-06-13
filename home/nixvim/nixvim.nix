@@ -176,7 +176,23 @@
         }
         {
             action = "<cmd>lua vim.diagnostic.open_float(0, {scope='line'})<CR>";
-            key = "<leader>e";
+            key = "<leader>rr";
+            mode = "n";
+            options = {
+                silent = true;
+            };
+        }
+        {
+            action = "<cmd>lua vim.lsp.buf.rename()<CR>";
+            key = "<leader>rn";
+            mode = "n";
+            options = {
+                silent = true;
+            };
+        }
+        {
+            action = "<cmd>lua vim.lsp.buf.hover()<CR>";
+            key = "<leader>in";
             mode = "n";
             options = {
                 silent = true;
@@ -184,7 +200,7 @@
         }
         {
             action = "<cmd>BufferLinePick<CR>";
-            key = "<leader>r";
+            key = "<leader>e";
             mode = "n";
             options = {
                 silent = true;
@@ -258,6 +274,7 @@
 
             local tsbuiltin = require('telescope.builtin')
             vim.keymap.set('n', '<leader>ff', tsbuiltin.find_files, {})
+            vim.keymap.set('n', '<leader>fm', tsbuiltin.lsp_document_symbols, {})
             '';
     };
 }

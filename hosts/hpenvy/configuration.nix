@@ -166,7 +166,6 @@
   htop
   vim
   neovim
-  pkgs.linuxKernel.packages.linux_zen.virtualboxGuestAdditions
   zsh
   meslo-lgs-nf
   timeshift
@@ -174,13 +173,11 @@
   gparted
   pciutils
   gcc
-  qemu
-  (pkgs.writeShellScriptBin "qemu-system-x86_64-uefi" ''
-        qemu-system-x86_64 \
-          -bios ${pkgs.OVMF.fd}/FV/OVMF.fd \
-          "$@"
-      '')
   ];
+
+# virtmanager
+virtualisation.libvirtd.enable = true;
+programs.virt-manager.enable = true;
 
   # enable kde connect
   programs.kdeconnect.enable = true;

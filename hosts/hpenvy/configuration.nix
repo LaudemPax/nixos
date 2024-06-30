@@ -173,6 +173,9 @@
   gparted
   pciutils
   gcc
+  qemu
+  quickemu
+  quickgui
   ];
 
 # virtmanager

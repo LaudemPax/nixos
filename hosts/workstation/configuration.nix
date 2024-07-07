@@ -175,6 +175,8 @@
   pciutils
   gcc
   thunderbird
+  qemu
+  quickemu
   ];
 
   # enable kde connect

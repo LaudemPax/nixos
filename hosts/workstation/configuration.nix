@@ -167,7 +167,6 @@
   htop
   vim
   neovim
-  pkgs.linuxKernel.packages.linux_zen.virtualboxGuestAdditions
   zsh
   meslo-lgs-nf
   timeshift

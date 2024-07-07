@@ -61,6 +61,7 @@
            pkgs.jamesdsp #Equalizer
            pkgs.zoom-us
            pkgs.android-studio
+           pkgs.slack
             ];
 
 # Home Manager is pretty good at managing dotfiles. The primary way to manage

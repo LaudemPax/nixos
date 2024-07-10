@@ -41,6 +41,7 @@
     pkgs.xclip
     pkgs.latte-dock
     pkgs.ranger
+    pkgs.ripgrep
     # pkgs.tmux
 
     # # It is sometimes useful to fine-tune packages, for example, by applying

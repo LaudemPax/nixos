@@ -275,6 +275,7 @@
             local tsbuiltin = require('telescope.builtin')
             vim.keymap.set('n', '<leader>ff', tsbuiltin.find_files, {})
             vim.keymap.set('n', '<leader>fm', tsbuiltin.lsp_document_symbols, {})
+            vim.keymap.set('n', '<leader>fs', tsbuiltin.live_grep, {})
             '';
     };
 }

@@ -166,7 +166,6 @@
   htop
   vim
   neovim
-  pkgs.linuxKernel.packages.linux_zen.virtualboxGuestAdditions
   zsh
   meslo-lgs-nf
   timeshift
@@ -174,7 +173,14 @@
   gparted
   pciutils
   gcc
+  qemu
+  quickemu
+  quickgui
   ];
+
+# virtmanager
+virtualisation.libvirtd.enable = true;
+programs.virt-manager.enable = true;
 
   # enable kde connect
   programs.kdeconnect.enable = true;

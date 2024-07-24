@@ -56,6 +56,7 @@
             pkgs.lazygit
             pkgs.latte-dock
             pkgs.teamspeak_client
+            pkgs.zoom-us
             pkgs.android-studio
             ];
 

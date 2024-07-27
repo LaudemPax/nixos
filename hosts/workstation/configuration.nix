@@ -177,6 +177,13 @@
   quickemu
   ];
 
+ # allow logseq to build (pls takeout later)
+ nixpkgs.config.permittedInsecurePackages = [
+                "electron-27.3.11"
+ ];
+
+
+
   # enable kde connect
   programs.kdeconnect.enable = true;
 

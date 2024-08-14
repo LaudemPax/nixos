@@ -50,7 +50,7 @@
             pkgs.google-chrome
             pkgs.spotify
             pkgs.skypeforlinux
-            pkgs.logseq
+            # pkgs.logseq
             pkgs.discord
             pkgs.steam
             pkgs.cargo

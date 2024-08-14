@@ -157,6 +157,11 @@
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
+  # allow some insecure packages
+  nixpkgs.config.permittedInsecurePackages = [
+        "electron-27.3.11"
+  ];
+
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
@@ -176,13 +181,6 @@
   qemu
   quickemu
   ];
-
- # allow logseq to build (pls takeout later)
- nixpkgs.config.permittedInsecurePackages = [
-                "electron-27.3.11"
- ];
-
-
 
   # enable kde connect
   programs.kdeconnect.enable = true;
@@ -217,10 +215,6 @@
 # enable docker
 virtualisation.docker.enable = true;
 virtualisation.docker.enableNvidia = true;
-
-   # enable virtualbox
-   virtualisation.virtualbox.host.enable = true;
-   users.extraGroups.vboxusers.members = [ "aman" ];
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.

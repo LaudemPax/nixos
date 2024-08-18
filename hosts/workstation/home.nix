@@ -63,6 +63,7 @@
            pkgs.android-studio
            pkgs.slack
            pkgs.obsidian
+           pkgs.pinta
             ];
 
 # Home Manager is pretty good at managing dotfiles. The primary way to manage

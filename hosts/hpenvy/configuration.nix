@@ -176,7 +176,12 @@
   qemu
   quickemu
   quickgui
+  # for redirecting usb using spice-gtk when using quickemu
+  spice-gtk
   ];
+
+# for redirecting usb using spice-gtk when using quickemu
+virtualisation.spiceUSBRedirection.enable = true;
 
 # virtmanager
 virtualisation.libvirtd.enable = true;

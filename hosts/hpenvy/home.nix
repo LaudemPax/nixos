@@ -57,7 +57,7 @@
             pkgs.latte-dock
             pkgs.teamspeak_client
             pkgs.zoom-us
-            pkgs.android-studio
+            pkgs.obs-studio
             ];
 
 # Home Manager is pretty good at managing dotfiles. The primary way to manage

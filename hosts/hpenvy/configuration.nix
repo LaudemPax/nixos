@@ -25,7 +25,6 @@
   # graphics
   hardware.opengl = {
 	enable = true;
-	driSupport = true;
 	driSupport32Bit = true;
   };
 #  services.xserver.videoDrivers = ["nvidia"];
@@ -104,8 +103,6 @@
     openFirewall = true;
   };
 
-  # Enable sound with pipewire.
-  sound.enable = true;
   hardware.pulseaudio.enable = false;
   hardware.pulseaudio.package = pkgs.pulseaudioFull;
   security.rtkit.enable = true;

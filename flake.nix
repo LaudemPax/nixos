@@ -37,6 +37,13 @@
                 inputs.home-manager.nixosModules.default
                 ];
         };
-
+        # dell funnel configuration 
+        nixosConfigurations.dellfunnel = nixpkgs.lib.nixosSystem {
+            specialArgs = {inherit inputs;}; # pass inputs to all modules
+                modules = [ 
+                ./hosts/dellfunnel/configuration.nix
+                inputs.home-manager.nixosModules.default
+                ];
+        };
     };
 }

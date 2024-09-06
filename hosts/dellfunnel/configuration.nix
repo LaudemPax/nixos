@@ -90,6 +90,7 @@
   zsh
   meslo-lgs-nf
   pciutils
+  nodejs_20
   ];
 
    # enable zsh system wide

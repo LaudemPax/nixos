@@ -92,6 +92,7 @@
   pciutils
   wget
   nodejs_20
+  unzip
   ];
 
    # enable zsh system wide

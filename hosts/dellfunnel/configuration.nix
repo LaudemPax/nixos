@@ -90,6 +90,7 @@
   zsh
   meslo-lgs-nf
   pciutils
+  wget
   nodejs_20
   ];
 

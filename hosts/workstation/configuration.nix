@@ -180,6 +180,7 @@
   thunderbird
   qemu
   quickemu
+  nvidia-container-toolkit
   ];
 
   # enable kde connect

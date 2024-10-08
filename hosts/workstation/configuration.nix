@@ -25,9 +25,9 @@
   nix.gc.automatic = true;
 
   # graphics
-  hardware.opengl = {
+  hardware.graphics = {
 	enable = true;
-	driSupport32Bit = true;
+	enable32Bit = true;
   };
   services.xserver.videoDrivers = ["nvidia"];
   hardware.nvidia = {
@@ -38,6 +38,7 @@
 	nvidiaSettings = true;
 	package = config.boot.kernelPackages.nvidiaPackages.stable;
   };
+  hardware.nvidia-container-toolkit.enable = true;
   boot.kernelModules = [ "nvidia_uvm" ];
 
   networking.hostName = "nixos"; # Define your hostname.
@@ -215,7 +216,7 @@
 
 # enable docker
 virtualisation.docker.enable = true;
-virtualisation.docker.enableNvidia = true;
+
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.

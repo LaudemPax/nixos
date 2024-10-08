@@ -64,6 +64,7 @@
            pkgs.slack
            pkgs.obsidian
            pkgs.pinta
+           pkgs.vsvode-fhs
             ];
 
 # Home Manager is pretty good at managing dotfiles. The primary way to manage

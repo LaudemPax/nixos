@@ -65,6 +65,7 @@
            pkgs.obsidian
            pkgs.pinta
            pkgs.vscode-fhs
+           pkgs.godot_4
             ];
 
 # Home Manager is pretty good at managing dotfiles. The primary way to manage

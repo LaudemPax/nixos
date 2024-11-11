@@ -90,6 +90,10 @@
                     pyright.enable = true;
                     # c sharp
                     csharp-ls.enable = true;
+                    # cmake
+                    cmake.enable = true;
+                    # C/C++
+                    clangd.enable = true;
                 };
             };
 

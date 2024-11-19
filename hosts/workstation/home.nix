@@ -58,6 +58,7 @@
             pkgs.latte-dock
             pkgs.teamspeak_client
            pkgs.onlyoffice-bin_latest
+           pkgs.libreoffice
            pkgs.jamesdsp #Equalizer
            pkgs.zoom-us
            pkgs.android-studio

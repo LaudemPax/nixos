@@ -59,6 +59,7 @@
             pkgs.zoom-us
             pkgs.obs-studio
             pkgs.obsidian
+            pkgs.jetbrains.idea-community
             ];
 
 # Home Manager is pretty good at managing dotfiles. The primary way to manage

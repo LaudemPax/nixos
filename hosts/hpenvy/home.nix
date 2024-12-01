@@ -58,6 +58,7 @@
             pkgs.teamspeak_client
             pkgs.zoom-us
             pkgs.obsidian
+            pkgs.jetbrains.idea-community
             ];
 
 # Home Manager is pretty good at managing dotfiles. The primary way to manage

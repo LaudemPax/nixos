@@ -172,7 +172,6 @@
   gcc
   qemu
   quickemu
-  quickgui
   # for redirecting usb using spice-gtk when using quickemu
   spice-gtk
   ];

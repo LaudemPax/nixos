@@ -23,9 +23,9 @@
   nix.gc.automatic = true;
 
   # graphics
-  hardware.opengl = {
+  hardware.graphics = {
 	enable = true;
-	driSupport32Bit = true;
+	enable32Bit = true;
   };
 #  services.xserver.videoDrivers = ["nvidia"];
 #  hardware.nvidia = {
@@ -37,7 +37,7 @@
 #	package = config.boot.kernelPackages.nvidiaPackages.stable;
 #  };
 
-  networking.hostName = "nixos"; # Define your hostname.
+  networking.hostName = "nixos-hpenvy"; # Define your hostname.
   
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
@@ -97,11 +97,11 @@
 
   # Enable CUPS to print documents.
   services.printing.enable = true;
-  services.avahi = {
-    enable = true;
-    nssmdns = true;
-    openFirewall = true;
-  };
+  # services.avahi = {
+  #   enable = true;
+  #   nssmdns = true;
+  #   openFirewall = true;
+  # };
 
   hardware.pulseaudio.enable = false;
   hardware.pulseaudio.package = pkgs.pulseaudioFull;

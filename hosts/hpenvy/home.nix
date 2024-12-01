@@ -57,7 +57,6 @@
             pkgs.latte-dock
             pkgs.teamspeak_client
             pkgs.zoom-us
-            pkgs.obs-studio
             pkgs.obsidian
             ];
 

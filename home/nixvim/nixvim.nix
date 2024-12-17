@@ -33,6 +33,7 @@
         };
         plugins = {
             lualine.enable = true;
+            luasnip.enable = true;
 
             oil = {
                 enable = true;
